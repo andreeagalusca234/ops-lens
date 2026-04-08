@@ -57,7 +57,7 @@ st.markdown("""
 
 # ── Gemini client ────────────────────────────────────────────────────────────
 def call_claude(prompt: str, system: str) -> str:
-    api_key = os.environ.get("GEMINI_API_KEY")
+    api_key = st.secrets.get("GEMINI_API_KEY") or os.environ.get("GEMINI_API_KEY")
     try:
         r = requests.post(
             f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={api_key}",
