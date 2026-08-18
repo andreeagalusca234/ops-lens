@@ -5,7 +5,7 @@ import re
 import os
 
 st.set_page_config(
-    page_title="AltOS — Process Intelligence",
+    page_title="Ops Lens - Process Intelligence",
     page_icon="⚙️",
     layout="wide",
 )
@@ -87,7 +87,7 @@ def parse_json_block(text: str) -> dict | list | None:
 st.caption("Built with Gemini 2.0 Flash · Streamlit")
 
 # ── Header ───────────────────────────────────────────────────────────────────
-st.markdown("# ⚙️ AltOS — Process Intelligence Platform")
+st.markdown("# ⚙️ Ops Lens — Process Intelligence Platform")
 st.caption("Design scalable operations · Eliminate bottlenecks · Automate intelligently")
 st.markdown("---")
 
@@ -95,7 +95,7 @@ tab1, tab2 = st.tabs(["🗺️ Process Architect", "📊 Client Operations Optim
 
 
 # ════════════════════════════════════════════════════════════════════════════
-# TAB 1 — Process Architect (mini AltOS)
+# TAB 1 — Process Architect
 # ════════════════════════════════════════════════════════════════════════════
 with tab1:
     st.markdown("## Process Architect")
